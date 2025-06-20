@@ -17,7 +17,7 @@ This repository contains lab exercises that simulate real-world networking scena
 ## 🧰 Tools Used
 
 - Cisco Packet Tracer (Latest version)
-- Jeremy’s IT Lab [Free Lab Guide] (https://jeremysitlab.com/)
+- Jeremy’s IT Lab (https://jeremysitlab.com/)
 - Git & GitHub for version control and documentation
 
 ## 📂 Repository Structure
