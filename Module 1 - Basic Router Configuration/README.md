@@ -1,4 +1,4 @@
-**📘 Module 01 – Router Basics & Initial Configuration***
+***📘 Module 01 – Router Basics & Initial Configuration***
 This module contains four foundational labs focused on essential router configuration, device security, and interface setup using Cisco Packet Tracer. These labs were based on the Jeremy’s IT Lab Free CCNA Labs and tailored to reinforce hands-on skills for CompTIA Network+ preparation.
 
 ***🧪 Labs Included***
