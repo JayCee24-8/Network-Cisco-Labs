@@ -11,21 +11,25 @@ Objective: Set and observe how enable password is stored, and apply service pass
 Result: Demonstrated that enable password is stored in plain text unless encrypted, and confirmed that removing encryption does not decrypt existing passwords.
 
 ***🔒 Lab 2 – Enable Secret vs Enable Password***
+
 Objective: Compare enable password with enable secret, understand which one takes precedence, and analyze encryption types.
 
 Result: Verified that enable secret overrides enable password, and is securely hashed (type 5), unlike type 7 obfuscation.
 
 ***🖥️ Lab 3 – Console Access Security***
+
 Objective: Configure console access with a password and enforce login requirements.
 
 Result: Successfully secured local console access, observed password encryption behavior, and saved the configuration from a local terminal session.
 
 ***🔌 Lab 4 – CDP Discovery & Serial Link Setup***
+
 Objective: Use CDP to discover neighboring devices, configure serial links with IPs and clock rate, and test router connectivity.
 
 Result: Correctly identified DCE/DTE ends, set clock rate on DCE side, assigned IPs, and successfully pinged between routers.
 
 ***🔧 Skills Practiced Across Labs***
+
 Router and switch hostname configuration
 
 Securing access with console and enable passwords
