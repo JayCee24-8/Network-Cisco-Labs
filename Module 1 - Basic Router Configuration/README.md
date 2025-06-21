@@ -1,8 +1,11 @@
 ***📘 Module 01 – Router Basics & Initial Configuration***
+
 This module contains four foundational labs focused on essential router configuration, device security, and interface setup using Cisco Packet Tracer. These labs were based on the Jeremy’s IT Lab Free CCNA Labs and tailored to reinforce hands-on skills for CompTIA Network+ preparation.
 
 ***🧪 Labs Included***
+
 ***🔐 Lab 1 – Enable Password and Encryption***
+
 Objective: Set and observe how enable password is stored, and apply service password-encryption.
 
 Result: Demonstrated that enable password is stored in plain text unless encrypted, and confirmed that removing encryption does not decrypt existing passwords.
