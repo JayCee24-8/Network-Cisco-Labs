@@ -41,14 +41,31 @@ This module covers essential concepts and configurations for VLANs, trunking, in
 ## **Repository Structure**
 
 Module-02-VLAN/
-├── 005-VLAN-Configuration/
-│ ├── 005-VLAN-Configuration.pkt
-│ └── README.md # Detailed steps and insights
-├── 006-VLAN-Trunking/
-│ ├── 006-VLAN-Trunk-Encapsulation.pkt
-│ └── README.md
-...
-└── README.md # This file
+    ├── 005-VLAN-Configuration/
+    │   ├── 005-VLAN-Configuration.pkt
+    │   └── README.md
+    ├── 006-VLAN-Trunking/
+    │   ├── 006-VLAN-Trunk-Encapsulation.pkt
+    │   └── README.md
+    ├── 007-Inter-VLAN-Routing-ROAS/
+    │   ├── 007-Inter-VLAN-Routing-ROAS.pkt
+    │   └── README.md
+    ├── 008-ROAS-Troubleshooting-1/
+    │   ├── 008-ROAS-Troubleshooting-1.pkt
+    │   └── README.md
+    ├── 009-ROAS-Troubleshooting-2/
+    │   ├── 009-ROAS-Troubleshooting-2.pkt
+    │   └── README.md
+    ├── 010-Local-Username-Password-Database/
+    │   ├── 010-Local-Username-Password-Database.pkt
+    │   └── README.md
+    ├── 011-MOTD-and-Login-Banner/
+    │   ├── 011-MOTD-and-Login-Banner.pkt
+    │   └── README.md
+    ├── 012-Naming-VLANs/
+    │   ├── 012-Naming-VLANs.pkt
+    │   └── README.md
+    └── README.md
 
 ## **Notes**
 Each lab’s folder contains:
