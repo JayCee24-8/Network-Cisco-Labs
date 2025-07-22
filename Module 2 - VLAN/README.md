@@ -1,54 +1,46 @@
-# Module 2 – VLAN & Inter-VLAN Routing
+#📘 Module 02 – VLAN & Inter-VLAN Routing
 
-This module covers essential concepts and configurations for VLANs, trunking, inter-VLAN routing (Router-on-a-Stick), troubleshooting common issues, and basic switch security. It follows the structure of **Jeremy’s IT Lab Free CCNA Labs** and is designed to build hands-on expertise in VLAN segmentation and routing.
+This module introduces VLAN creation, trunking, and inter-VLAN routing (Router-on-a-Stick) while also focusing on basic switch security and troubleshooting. The labs are based on Jeremy’s IT Lab Free CCNA Labs and are designed to reinforce VLAN segmentation, trunk encapsulation, and communication between multiple VLANs.
 
----
+🧪 Labs Included
 
-## **Labs Overview**
+🌐 Lab 5 – VLAN Configuration  
+**Objective:** Create VLANs, assign ports, and verify connectivity within the same VLAN.  
+**Result:** Confirmed that devices in the same VLAN can communicate, while those in different VLANs cannot without routing.
 
-### **005 - VLAN Configuration**
-- Configures VLANs and assigns switch ports to specific VLANs.
-- Verifies device connectivity within the same VLAN.
+🔗 Lab 6 – VLAN Configuration Trunk Encapsulation  
+**Objective:** Configure trunk links between switches using 802.1Q encapsulation.  
+**Result:** Verified that VLAN tags are preserved across trunk links, enabling VLAN traffic to pass between switches.
 
-### **006 - VLAN Configuration Trunk Encapsulation**
-- Configures a trunk link between switches.
-- Explains how 802.1Q encapsulation preserves VLAN tagging.
+🔀 Lab 7 – Inter-VLAN Routing (ROAS)  
+**Objective:** Implement Router-on-a-Stick with sub-interfaces for inter-VLAN communication.  
+**Result:** Successfully configured sub-interfaces and IP addressing, allowing traffic between VLANs.
 
-### **007 - Inter-VLAN Routing (ROAS)**
-- Implements router-on-a-stick using sub-interfaces on a single router interface.
-- Configures IP addresses and tests communication across VLANs.
+🛠️ Lab 8 – Inter-VLAN Routing (ROAS) Troubleshooting #1  
+**Objective:** Identify and fix misconfigurations related to VLAN IDs and trunking.  
+**Result:** Corrected sub-interface VLAN ID issues and restored inter-VLAN connectivity.
 
-### **008 - Inter-VLAN Routing (ROAS) Troubleshooting #1**
-- Identifies and resolves misconfigurations in sub-interface VLAN IDs and trunking.
+🛠️ Lab 9 – Inter-VLAN Routing (ROAS) Troubleshooting #2  
+**Objective:** Troubleshoot trunk mode and default gateway errors.  
+**Result:** Fixed trunk configuration on SW2 and corrected default gateway for VLAN 13.
 
-### **009 - Inter-VLAN Routing (ROAS) Troubleshooting #2**
-- Fixes default gateway and trunk mode issues to restore inter-VLAN communication.
+👤 Lab 10 – Local Username-Password Database  
+**Objective:** Configure local user accounts for device login authentication.  
+**Result:** Demonstrated that passwords are case-sensitive while usernames are not.
 
-### **010 - Local Username-Password Database**
-- Configures local user accounts on a router.
-- Demonstrates case sensitivity of passwords vs usernames.
+📢 Lab 11 – Message of the Day and Login Banner  
+**Objective:** Set up login banners for user notifications and security warnings.  
+**Result:** Confirmed that MOTD and login banners display correctly before login prompts.
 
-### **011 - Message of the Day and Login Banner**
-- Adds legal and informational login banners.
-- Verifies proper display of MOTD and login banners.
+🏷️ Lab 12 – Naming VLANs  
+**Objective:** Assign descriptive names to VLANs for better documentation.  
+**Result:** Successfully named VLANs and verified connectivity within each VLAN.
 
-### **012 - Naming VLANs**
-- Assigns descriptive names to VLANs.
-- Verifies communication within VLANs and improves network documentation.
+🔧 Skills Practiced Across Labs
+- VLAN creation and port assignment.
+- Configuring and verifying trunk links with 802.1Q encapsulation.
+- Inter-VLAN routing with router sub-interfaces.
+- VLAN troubleshooting and gateway configuration.
+- Local device authentication and login banners.
+- VLAN naming for structured network documentation.
 
----
-
-## **Repository Structure**
-
-Module-02-VLAN/
-├── 005-VLAN-Configuration.pkt
-├── 006-VLAN-Trunking.pkt
-...
-└── README.md # This file
-
-## **Notes**
-Each lab’s folder contains:
-- **Packet Tracer file (.pkt)** with the configuration.
-- **README.md** detailing the steps taken, commands used, and insights gained.
-
-For in-depth commands and troubleshooting approaches, check the **README.md inside each lab folder.**
