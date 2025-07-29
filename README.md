@@ -37,6 +37,6 @@ Each folder represents a specific lab topic and includes:
 
 **Juan Hernandez**  
 Software Engineer aspiring Cybersecurity Master´s Degree
-Currently studying for the **CompTIA Network+ Certification**
+Currently studying for the **CompTIA Security+ Certification**
 
 ---
