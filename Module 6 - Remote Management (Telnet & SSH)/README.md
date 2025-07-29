@@ -14,9 +14,9 @@ Configure Telnet remote access on a router and switch using local authentication
 - Created a local user account with:  
   `username cisco password CCNA`
 - Configured VTY lines (0–15) to use local login and only allow Telnet:  
-`line vty 0 15
-login local
-transport input telnet`
+`line vty 0 15`
+`login local`
+`transport input telnet`
 - Successfully connected to devices from PC1 using:  
 `telnet [device-ip]`
 
@@ -34,10 +34,10 @@ This is required to generate RSA keys because SSH uses both the hostname and dom
 - Generated RSA keys (1024 bits):  
 `crypto key generate rsa`
 - Configured VTY lines (0–15) to only allow SSH:  
-`line vty 0 15
-login local
-transport input ssh
-exec-timeout 5`
+`line vty 0 15`
+`login local`
+`transport input ssh`
+`exec-timeout 5`
 - Enabled SSH version 2:  
 `ip ssh version 2`
 - Successfully connected from PC1 using:  
