@@ -2,9 +2,9 @@
 
 This module covers the configuration of remote access methods—Telnet and SSH—on Cisco devices. It highlights the differences in security between Telnet and SSH and includes key steps such as user account creation, VTY line configuration, and RSA key generation.
 
-## Labs Included
+## 🧪 Labs Included
 
-### Lab 22 – Telnet
+### 🔌 Lab 22 – Telnet
 **Objective:**  
 Configure Telnet remote access on a router and switch using local authentication.
 
@@ -20,7 +20,7 @@ transport input telnet`
 - Successfully connected to devices from PC1 using:  
 `telnet [device-ip]`
 
-### Lab 23 – SSH
+### 🔐 Lab 23 – SSH
 **Objective:**  
 Configure SSH remote access for secure encrypted connections.
 
@@ -44,7 +44,7 @@ exec-timeout 5`
 `ssh -l cisco [ip-address]`  
 **Note:** Unlike Telnet, the username must be specified with `-l`.
 
-## Skills Practiced
+## 🔧 Skills Practiced
 - Local user account creation for device authentication.
 - Configuring VTY lines for Telnet and SSH access.
 - Generating RSA keys for SSH encryption.
