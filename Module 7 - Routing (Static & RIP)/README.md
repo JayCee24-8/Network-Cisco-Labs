@@ -97,6 +97,7 @@ Always set the next-hop to the neighbor’s IP, not the router’s own.
 - Use show ip route to verify learned subnets.
 
 - Enable version 2 with:
+
 `router rip`
  
 `version 2`  
