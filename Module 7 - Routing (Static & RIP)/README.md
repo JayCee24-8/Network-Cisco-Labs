@@ -1,4 +1,4 @@
-# 📘 Module 7 – Routing (Static & RIP) Labs
+# 📘 Module 7 – Routing (Static & RIP)
 
 This repository documents and explains hands-on labs for static and dynamic routing, including the configuration of RIP and floating static routes. Each lab includes objectives, key steps, results, and essential notes.
 
