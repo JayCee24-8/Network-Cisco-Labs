@@ -98,8 +98,10 @@ Always set the next-hop to the neighbor’s IP, not the router’s own.
 
 - Enable version 2 with:
 `router rip`
-``version 2``
-```no auto-summary```
+ 
+`version 2`  
+
+`no auto-summary`
 
 ### 🌐 Lab 28 – RIP (Part 2)
 
