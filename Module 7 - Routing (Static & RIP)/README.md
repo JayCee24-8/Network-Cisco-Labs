@@ -98,8 +98,8 @@ Always set the next-hop to the neighbor’s IP, not the router’s own.
 
 - Enable version 2 with:
 `router rip`
-`version 2`
-`no auto-summary`
+``version 2``
+```no auto-summary```
 
 ### 🌐 Lab 28 – RIP (Part 2)
 
@@ -123,7 +123,7 @@ Always set the next-hop to the neighbor’s IP, not the router’s own.
 
 - First pings may fail due to ARP and convergence delays.
 
-##🔧 Skills Practiced
+## 🔧 Skills Practiced
 
 Configuring static routes using next-hop and exit interface
 
