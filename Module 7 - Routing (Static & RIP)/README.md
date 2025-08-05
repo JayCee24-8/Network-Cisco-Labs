@@ -1,4 +1,4 @@
-#📘 Module 7 – Routing (Static & RIP) Labs
+# 📘 Module 7 – Routing (Static & RIP) Labs
 
 This repository documents and explains hands-on labs for static and dynamic routing, including the configuration of RIP and floating static routes. Each lab includes objectives, key steps, results, and essential notes.
 
@@ -12,19 +12,19 @@ This repository documents and explains hands-on labs for static and dynamic rout
 
 **Key Steps:**
 
-Configure IP addresses on all interfaces.
+- Configure IP addresses on all interfaces.
 
-Ping to identify reachability and trace issues.
+- Ping to identify reachability and trace issues.
 
-Add static routes pointing to subnet networks.
+- Add static routes pointing to subnet networks.
 
-** ⚠️ Notes: **
+**⚠️ Notes:**
 
-Initial pings from PC1 to PC2 fail due to routers not knowing the return route.
+- Initial pings from PC1 to PC2 fail due to routers not knowing the return route.
 
-Use the correct CIDR notation when assigning addresses.
+- Use the correct CIDR notation when assigning addresses.
 
-Use the show ip route command to verify learned routes.
+- Use the show ip route command to verify learned routes.
 
 Always set the next-hop to the neighbor’s IP, not the router’s own.
 
@@ -32,21 +32,21 @@ Always set the next-hop to the neighbor’s IP, not the router’s own.
 
 **Objective: Extend static routing between multiple routers and allow multi-hop communication.
 
-Result: Verified full connectivity among all PCs using intermediate routers.
+**Result:** Verified full connectivity among all PCs using intermediate routers.
 
-Key Steps:
+**Key Steps:**
 
-All IPs are preconfigured.
+- All IPs are preconfigured.
 
-Add static routes via routers directly connected to destination subnets.
+- Add static routes via routers directly connected to destination subnets.
 
-** ⚠️ Notes: **
+**⚠️ Notes:**
 
-R3 and R2 are not directly connected, so traffic must be routed via R1 or R4.
+- R3 and R2 are not directly connected, so traffic must be routed via R1 or R4.
 
-When routing through an intermediate router, use the IP address of the next reachable router.
+- When routing through an intermediate router, use the IP address of the next reachable router.
 
-Static routes must exist in both directions for full communication.
+- Static routes must exist in both directions for full communication.
 
 ### 🌊 Lab 26 – Static Routing (Part 3): Floating Static Route
 
@@ -56,25 +56,25 @@ Static routes must exist in both directions for full communication.
 
 **Key Steps:**
 
-RIP is configured on all routers except R1 and R3.
+- RIP is configured on all routers except R1 and R3.
 
-R1 learns about 10.0.0.0/24 via RIP (AD = 120).
+- R1 learns about 10.0.0.0/24 via RIP (AD = 120).
 
-We manually added a floating static route through R3 with AD = 130.
+- We manually added a floating static route through R3 with AD = 130.
 
 **⚠️ Notes:**
 
-Floating static routes are used for backup and must have higher AD than the primary route.
+- Administrative Distance (AD) defines the trust level of a route. Lower AD = more preferred.
 
-If we use AD < 120, it overrides the RIP route and becomes the default.
+- Floating static routes are used for backup and must have higher AD than the primary route.
 
-Use the command:
+- If we use AD < 120, it overrides the RIP route and becomes the default.
 
-ip route 10.0.0.0 255.255.255.0 192.168.13.3 130
+- Use the command:
 
-Shutdown R2 to test the backup route.
+    `ip route 10.0.0.0 255.255.255.0 192.168.13.3 130`
 
-Administrative Distance (AD) defines the trust level of a route. Lower AD = more preferred.
+- Shutdown R2 to test the backup route.
 
 ### 📡 Lab 27 – RIP (Part 1)
 
@@ -82,25 +82,24 @@ Administrative Distance (AD) defines the trust level of a route. Lower AD = more
 
 **Result:** Confirmed that R1 learned routes through RIP after enabling version 2 and disabling auto-summary.
 
-Key Steps:
+**Key Steps:**
 
-Configure RIP with router rip and network commands.
+- Configure RIP with router rip and network commands.
 
-Initially, RIP v1 auto-summarizes to 10.0.0.0/8.
+- Initially, RIP v1 auto-summarizes to 10.0.0.0/8.
 
-Enabling RIP v2 and disabling auto-summary fixes this.
+- Enabling RIP v2 and disabling auto-summary fixes this.
 
 **⚠️ Notes:**
 
-Use RIP version 2 to support classless routing.
+- Use RIP version 2 to support classless routing.
 
-Use show ip route to verify learned subnets.
+- Use show ip route to verify learned subnets.
 
-Enable version 2 with:
-
-router rip
-version 2
-no auto-summary
+- Enable version 2 with:
+`router rip`
+`version 2`
+`no auto-summary`
 
 ### 🌐 Lab 28 – RIP (Part 2)
 
@@ -110,19 +109,19 @@ no auto-summary
 
 **Key Steps:**
 
-Configure RIP on each router.
+- Configure RIP on each router.
 
-Disable updates on switch-connected interfaces using passive-interface.
+- Disable updates on switch-connected interfaces using passive-interface.
 
-Add all subnet-connected networks to RIP.
+- Add all subnet-connected networks to RIP.
 
 **⚠️ Notes:**
 
-To avoid unnecessary RIP updates:
+- To avoid unnecessary RIP updates:
 
-passive-interface [interface-type] [interface-number]
+`passive-interface [interface-type] [interface-number]`
 
-First pings may fail due to ARP and convergence delays.
+- First pings may fail due to ARP and convergence delays.
 
 ##🔧 Skills Practiced
 
